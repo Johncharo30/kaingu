@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+    <title>Weather forecast</title>
+    <head> 
+        <style>
+            .container{
+                display:flex;
+                flex-direction: column;
+                background-color: #ffff;
+                padding: 20px;
+                box-shadow: #ccc;
+                border-radius: 10px;
+            
+            }
+            .weather-container{
+                display: flex;
+                align-items: left;
+                max-width: 400px;
+                margin: 0 auto;
+
+            }
+            body{ 
+                background-color: grey;
+                display:flex;
+                padding: auto;
+                margin: auto;
+            }
+            .search-box{
+                width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px; 
+            outline: none;
+            margin-right: 8px;
+            width: 300px;
+
+            }
+            .search-button{
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color:blueviolet;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            }
+            .search-button:hover{
+                background-color: chocolate;
+            }
+            .town-content{
+            
+            display:flex;
+            }
+            .highlight{
+                color: red;
+            }
+            .paris-content{
+            margin-top: 1px;
+            text-align: left;
+            max-width: 400px; 
+            color: #333; 
+            font-size:larger;
+            margin-left: 0;
+            padding-left: 0;
+            }.degree-content{
+                margin-right: 50px;
+                font-size: large;
+                text-align: right;
+
+            }
+            .highlight1{
+                color: blueviolet;
+            }
+
+        </style>
+    </head>
+    <div>
+        <div class="container">
+        <div class="weather-container">
+            <input type="text" class="search-box" placeholder="Enter a City..." >
+            <button class="search-button">Search</button> 
+            </div>
+            <div class="town-content">
+                
+                <div class="paris-content"><p><h1>Paris</h1> Tuesday 07:45,moderate rain<br>Humidity:<span class="highlight">87%</span>,Wind:<span class="highlight">7.2Km/h</span>   </p></div>
+                <div class="degree-content"><h1>☀  24&deg;<sup>c</sup></h1></div>   
+            </div>
+            <p>The project was coded by <span class="highlight1"> John charo </span> and is <span class="highlight1"> on Github </span> and <span class="highlight1">Hosted on Netlify</span></p> 
+        </div>   
+    </body>
+</html>
